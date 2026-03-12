@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="contact.title">İletişim - Özel Eğitim Bilişim Projesi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="theme-toggle">
+        <button id="themeBtn" class="theme-Btn">🌙</button>
+    </div>
+
+    <div class="lang-toogle">
+        <button id="langBtn" class="lang-Btn">🇹🇷</button>
+    </div>
+
+    <header data-i18n="contact.title">İletişim</header>
+
+    <nav>
+        <a href="index.html" data-i18n="nav.home">🏠 Anasayfa</a>
+        <a href="hedefler.html" data-i18n="nav.goals">🎯 Hedefler</a>
+        <a href="iletisim.html" data-i18n="nav.contact">📞 İletişim</a>
+        <a href="hazırlayanlar.html" data-i18n="nav.authors">👨‍💻 Hazırlayanlar</a>
+    </nav>
+
+    <section>
+        <h2 data-i18n="contact.subtitle">Bize Ulaşın</h2>
+        <div class="contact-container">
+            <form id="myContactForm" class="contact-form">
+                <input id="ad" type="text" placeholder="Adınız" data-i18n-placeholder="contact.form.name" required>
+                <input id="eposta" type="email" placeholder="E-mail" data-i18n-placeholder="contact.form.email" required>
+                <textarea id="mesaj" placeholder="Mesajınız" data-i18n-placeholder="contact.form.message" rows="5" required style="resize: vertical; overflow:auto;"></textarea>
+                <button id="gönder" type="submit" class="btn" data-i18n="contact.form.send">Gönder</button>
+            </form>
+            <div class="contact-info">
+                <h3 data-i18n="contact.info.title">İletişim Bilgileri</h3>
+                <p data-i18n="contact.info.email">📧 Email: dortcelik@gmail.com</p>
+                <p data-i18n="contact.info.phone">📱 Telefon: +90 (000) 000-0000</p>
+                <p data-i18n="contact.info.address">📍 Adres: Bursa, Türkiye</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Özel Eğitim Bilişim Projesi. Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
